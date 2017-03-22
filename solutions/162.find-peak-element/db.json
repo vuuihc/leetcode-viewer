@@ -1,0 +1,1 @@
+{"javascript":"/**\r\n * @param {number[]} nums\r\n * @return {number}\r\n */\r\nvar findPeakElement = function(nums) {\r\n    let n = nums.length;\r\n    if(n===1) return 0;\r\n    for(let i=0;i<n;i++){\r\n        if((i===0&&nums[i]>nums[i+1]) || (nums[i]>nums[i-1]&&nums[i]>nums[i+1]) || (i===n-1&&nums[i]>nums[i-1])){\r\n            return i;\r\n        }\r\n    }\r\n};"}

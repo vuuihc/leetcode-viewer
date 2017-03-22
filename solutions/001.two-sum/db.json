@@ -1,0 +1,1 @@
+{"javascript":"/**\r\n * @param {number[]} nums\r\n * @param {number} target\r\n * @return {number[]}\r\n */\r\nvar twoSum = function(nums, target) {\r\n    for(var i=0;i<nums.length;i++){\r\n        var index = nums.indexOf(target-nums[i])\r\n        if(index>-1&&index!==i){\r\n            return [i,index]\r\n        }\r\n    }\r\n};"}

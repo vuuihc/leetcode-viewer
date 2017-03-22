@@ -1,0 +1,1 @@
+{"javascript":"/**\r\n * @param {number} n\r\n * @return {number}\r\n */\r\nvar arrangeCoins = function(n) {\r\n    let result=0,max = n;\r\n    for(let i=1;i<=max+1;i++){\r\n        if(n<i){\r\n            result = i-1;\r\n            break;\r\n        }else{\r\n            n = n - i;\r\n        }\r\n    }\r\n    return result;\r\n};"}

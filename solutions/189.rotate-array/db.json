@@ -1,0 +1,1 @@
+{"javascript":"/**\r\n * @param {number[]} nums\r\n * @param {number} k\r\n * @return {void} Do not return anything, modify nums in-place instead.\r\n */\r\nvar rotate = function(nums, k) {\r\n    var head = nums.splice(nums.length-k,k)\r\n    nums.splice(0,0,...head)\r\n};"}
